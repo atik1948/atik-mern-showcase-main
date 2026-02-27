@@ -9,7 +9,7 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 const App = () => {
-  // BASE_URL সাধারণত "/atik-mern-showcase-main/" হয়, শেষে slash থাকে
+  // e.g. "/atik-mern-showcase-main/" -> "/atik-mern-showcase-main"
   const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 
   return (
@@ -17,7 +17,6 @@ const App = () => {
       <TooltipProvider>
         <Toaster />
         <Sonner />
-
         <BrowserRouter basename={base}>
           <Routes>
             <Route path="/" element={<Index />} />
