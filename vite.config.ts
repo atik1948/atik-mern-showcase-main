@@ -5,7 +5,11 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === "production" ? "/atik-mern-showcase-main/" : "/",
+  base: process.env.NETLIFY
+    ? "/"
+    : mode === "production"
+      ? "/atik-mern-showcase-main/"
+      : "/",
 
   server: {
     host: "::",
