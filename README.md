@@ -1,75 +1,90 @@
-## Atik MERN Portfolio
+# Atik MERN Portfolio
 
+A responsive personal portfolio for **Atik Wahid**, built with **Vite**, **React**, **JavaScript**, **Tailwind CSS**, and **shadcn/ui**.
+
+Live site: `https://legendary-biscochitos-a57923.netlify.app`
+
+## Stack
 
 - Vite
-- TypeScript
 - React
-- shadcn-ui
+- JavaScript / JSX
 - Tailwind CSS
+- shadcn/ui
+- React Router
 
----
+## What It Includes
 
-## Overview
+- Hero section with profile image, social links, and CTA buttons
+- About section with background, work philosophy, and current focus
+- Projects showcase with feature summaries and tech stacks
+- Skills section with categorized strengths
+- Contact section with email-draft form and direct contact links
+- Responsive layout with custom gradients, tokens, and UI components
 
-This is a modern, responsive portfolio for **Atik Wahid**, built with **React**, **TypeScript**, **Vite**, **Tailwind CSS**, and **shadcn/ui**.  
-It showcases projects, skills, and a contact form so people can easily reach out.
+## Quick Start
 
----
-
-## Getting Started
-
-### Install dependencies
+### 1. Install dependencies
 
 ```bash
 npm install
 ```
 
-### Run in development
+### 2. Start the Vite dev server
 
 ```bash
 npm run dev
 ```
 
-Open the URL shown in the terminal (usually `http://localhost:5173`).
+Open the local URL shown in the terminal. In this project the dev server is configured for port `8080`.
 
-### Build for production
+## Build And Preview
+
+### Create a production build
 
 ```bash
 npm run build
-npm run preview   # optional: preview the production build
 ```
 
-The production build is output to the `dist/` folder.
+The production files are generated in `dist/`.
 
----
+### Preview with Vite
 
-## Main Features
+```bash
+npm run preview
+```
 
-- Hero section with photo, tech stack badges, and social links
-- About section describing background and philosophy
-- Projects section with featured projects and tech stacks
-- Skills section with categorized skills and progress bars
-- Contact section with contact info and a working contact form (toast feedback)
-- Fully responsive layout using Tailwind and custom gradients/animations
+### Serve the built files with live-server
 
----
+```bash
+npm run serve
+```
 
-## Important Files
+This starts `live-server` for the `dist` folder on `http://localhost:4173`.
 
-- `src/App.tsx` – App shell and routing.
-- `src/pages/Index.tsx` – Combines all main sections.
-- `src/components/Navigation.tsx` – Sticky navbar with smooth scrolling.
-- `src/components/Hero.tsx` – Top hero section.
-- `src/components/About.tsx`, `Projects.tsx`, `Skills.tsx`, `Contact.tsx` – Main sections.
-- `src/components/ui/*` – shadcn/ui component library.
-- `src/index.css` – Tailwind base + custom design tokens, gradients, and animations.
+## Available Scripts
 
----
+- `npm run dev` - Start the Vite development server
+- `npm run build` - Create the production build
+- `npm run build:dev` - Build using development mode
+- `npm run preview` - Preview the build with Vite
+- `npm run serve` - Serve the built `dist` folder with `live-server`
+- `npm run lint` - Run ESLint
+
+## Project Structure
+
+- `src/main.jsx` - React entry file
+- `src/App.jsx` - App shell and route setup
+- `src/pages/Index.jsx` - Main landing page composition
+- `src/components/` - Portfolio sections such as hero, about, projects, skills, and contact
+- `src/components/ui/` - shadcn/ui building blocks
+- `src/index.css` - Tailwind base styles and design tokens
+- `vite.config.js` - Vite configuration
 
 ## Deployment
 
-Works well on static hosts such as **Netlify** or **Vercel**.
+This project works well on static hosts such as **Netlify**, **Vercel**, and **GitHub Pages**.
 
-- **Build command**: `npm run build`
-- **Publish directory**: `dist`
-
+- Netlify URL: `https://legendary-biscochitos-a57923.netlify.app`
+- Build command: `npm run build`
+- Publish directory: `dist`
